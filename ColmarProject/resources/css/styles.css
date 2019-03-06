@@ -1,0 +1,451 @@
+/*Universal Styles*/
+
+body {
+	font-size: 18px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+	width: 1050px;
+	margin: 0 auto;
+}
+
+
+.headline {
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.content {
+	width: 100%;
+	padding: 16px 1px 16px 0px;
+}
+
+.box {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+}
+
+.left-section  {
+	width: 60%;
+	padding: 32px 24px;
+}
+
+.left-section img {
+	width: 100%;
+}
+
+.right-section{
+	width: 440px;
+}
+
+.right-section img {
+	width: 35%;
+}
+
+
+h1 {
+	font-size: 2.15rem;
+	color: #383838;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 1.9rem;
+	color: #383838;
+	font-weight: 700;
+}
+
+
+h4 {
+	font-size: 1.25rem;
+	color: #383838;
+	font-weight: 500;
+	line-height: 1.45rem;
+}
+
+h6 {
+	font-size: 1.10rem;
+	color: #383838;
+	font-weight: 500;
+}
+
+a {
+	text-decoration: none;
+	color: gray;
+}
+
+@media only screen and (max-width: 480px) {
+	.container {
+		width: 100%;
+	}
+}
+
+
+
+/*styles for the header*/
+
+header {
+	background-color: white;
+}
+
+header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 64px;
+}
+
+.logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo img {
+	height: 2.75rem;
+	padding-left: 24px;
+}
+
+.Colmar {
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.Academy {
+	font-size: 1rem;
+	font-weight: 400;
+	color: gray;
+}
+
+.left-section h2 {
+	padding-top: 32px;
+}
+
+.left-section p {
+	padding: 24px 24px 24px 0px;
+}
+
+span {
+	font-size: .75rem;
+	color: #383838;
+	line-height: .95rem;
+}
+
+nav.mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 480px) {
+	nav.desktop {
+		display: none;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	nav.mobile {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-right: 24px;
+		padding-left: 24px;
+	}
+}
+
+
+
+/*styles for the main banner*/
+
+.main-banner {
+	background-color: #DCDCDC;
+	margin: 0 auto;
+}
+
+.main-banner .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.tagline {
+	height: auto;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	margin-top: 6rem;
+	margin-right: 60px;
+	padding-left: 20px;
+}
+
+.tagline h4 {
+	font-size: 1.25rem;
+	color: #383838;
+	font-weight: 500;
+	line-height: 1.45rem; ;
+}
+
+.tagline a {
+	background-color: #383838;
+	color: white;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	text-align: center;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+	.main-banner .left-section {
+		width: 100%;
+		padding: 0px 0px;
+	}
+
+	.tagline {
+		margin: 32px 24px;
+		padding-left: 0px;
+		align-items: center;
+	}
+
+	.right-section {
+		width: 100%;
+	}
+
+	.left-section {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.tagline a {
+		width: 100%;
+		background-color: #808080;
+	}
+}
+
+/*styles for the practice content*/
+
+.practice {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.practice .right-section {
+	border-left: 1px solid #DCDCDC;
+	padding: 16px 0px 32px 0px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+.box img {
+	margin-top: 45px;
+}
+
+.box img.desktop {
+	width: 35%;
+	padding: 16px;
+}
+
+.box img.mobile {
+	display: none;
+}
+
+.second-info {
+	border-top: 1px solid #DCDCDC;
+	border-bottom: 1px solid #DCDCDC ;
+}
+
+@media only screen and (max-width: 480px) {
+	.tagline a {
+		width: 100%;
+		background-color: #808080;
+	}
+
+	.practice .left-section {
+		display: none;
+	}
+
+	.practice .right-section {
+		border-left: 0px;
+		padding: 16px 16px 32px 16px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.box {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.box img.desktop {
+		display: none;
+	}
+
+	.box img.mobile {
+		display: flex;
+		width: 100%;
+	}
+
+	.content {
+		padding: 0px;
+		width: 100%;
+		margin-top: 16px;
+	}
+
+	.second-info {
+		border-top: 0px;
+		border-bottom: 0px;
+		margin: 16px 0px;
+	}
+	
+	.lecture {
+		background-color: white;
+	}
+}
+
+
+/*styles for the learning content*/
+
+.learning {
+	background-color: #F5F5F5;
+	padding-bottom: 32px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.courses-grid {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.course {
+	background-color: white;
+	width: 32%;
+	height: 26rem;
+	margin-bottom: 30px;
+}
+
+.course img {
+	width: 100%;
+}
+
+.course-content {
+	padding: 16px 16px 24px 16px;
+}
+
+.course h6 {
+	padding-bottom: 1rem;
+}
+
+.course-content span {
+	font-size: .8rem;
+	color: gray;
+}
+
+.course p {
+	padding-top: .55rem;
+}
+
+@media only screen and (max-width: 480px) {
+	.learning {
+		border-top: 1px solid #DCDCDC;
+		border-bottom: 1px solid #DCDCDC;
+		background-color: white;
+	}
+
+	.learning .container {
+		margin: 0 auto;
+		width: 100%;
+	}
+}
+
+
+/*styles for the thesis content*/
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.left-section video {
+	width: 100%;
+	object-fit: contain;
+}
+
+.thesis h6 {
+	padding-top: 24px;
+}
+
+.thesis p {
+	padding-top: 16px;
+	padding-bottom: 0px;
+}
+
+.thesis .first-info {
+	margin-top: 32px;
+}
+
+.thesis .box img {
+	width: 35%;
+	padding: 16px;
+}
+
+/*styles for the footer*/
+
+footer {
+	border-top: 1px solid #DCDCDC;
+	background-color: white;
+	height: 3.5rem;
+}
+
+footer .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: .75rem;
+}
+
+footer p {
+	padding-left: 24px;
+	padding-right: 24px;
+	color: #383838;
+}
+
+.footer-nav {
+	text-align: right;
+	flex-grow: 1;
+}
+
+@media only screen and (max-width: 480px) {
+	footer {
+		border-top: 0px;
+	}
+	footer .container {
+		margin-top: 24px;
+	}
+
+	footer p {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+
+}
